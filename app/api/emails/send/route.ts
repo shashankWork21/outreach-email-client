@@ -62,7 +62,7 @@ export async function POST(request: Request) {
         Source: `Smart Algorhythm <${process.env.SES_DEFAULT_FROM_EMAIL}>`,
         Destination: {
           ToAddresses: [toEmail],
-          CcAddresses: ["shashank@smartalgorhythm.com", "adv.yojha@gmail.com"],
+          CcAddresses: ["adv.yojha@gmail.com"],
         },
         Message: {
           Subject: {

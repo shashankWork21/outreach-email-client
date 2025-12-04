@@ -60,6 +60,7 @@ export async function POST(request: Request) {
     emailList.map(async (toEmail) => {
       const command = new SendEmailCommand({
         Source: `Smart Algorhythm <${process.env.SES_DEFAULT_FROM_EMAIL}>`,
+        ReplyToAddresses: ["shashank@smartalgorhythm.com"],
         Destination: {
           ToAddresses: [toEmail],
           CcAddresses: ["adv.yojha@gmail.com"],
